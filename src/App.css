@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* General board container style */
+.board-row {
+  display: flex;
+}
+
+/* Individual square style */
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #ddd;
+}
+
+/* Optional: To center the board */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
